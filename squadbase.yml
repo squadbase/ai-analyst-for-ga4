@@ -1,0 +1,8 @@
+version: '1'
+
+build:
+  runtime: node22
+  framework: nextjs
+
+deployment:
+  provider: aws
