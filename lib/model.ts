@@ -28,17 +28,17 @@ export function getModelClient(model: LLMModel, config: LLMModelConfig) {
 
   const providerConfigs = {
     openai: () => createOpenAI()(modelNameString),
-    togetherai: () =>
-      createTogetherAI({
-        apiKey: apiKey || process.env.TOGETHER_API_KEY,
-        baseURL: baseURL || "https://api.together.xyz/v1",
-      })(modelNameString),
-    ollama: () => createOllama({ baseURL })(modelNameString),
-    fireworks: () =>
-      createFireworks({
-        apiKey: apiKey || process.env.FIREWORKS_API_KEY,
-        baseURL: baseURL || "https://api.fireworks.ai/inference/v1",
-      })(modelNameString),
+    // togetherai: () =>
+    //   createTogetherAI({
+    //     apiKey: apiKey || process.env.TOGETHER_API_KEY,
+    //     baseURL: baseURL || "https://api.together.xyz/v1",
+    //   })(modelNameString),
+    // ollama: () => createOllama({ baseURL })(modelNameString),
+    // fireworks: () =>
+    //   createFireworks({
+    //     apiKey: apiKey || process.env.FIREWORKS_API_KEY,
+    //     baseURL: baseURL || "https://api.fireworks.ai/inference/v1",
+    //   })(modelNameString),
   };
 
   const createClient =

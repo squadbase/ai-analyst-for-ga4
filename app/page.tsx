@@ -13,6 +13,7 @@ import { LLMPicker } from "@/components/llm-picker";
 import { LLMSettings } from "@/components/llm-settings";
 import { useLocalStorage } from "usehooks-ts";
 import { toUploadableFile } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Home() {
   const [files, setFiles] = useState<File[]>([]);
@@ -62,6 +63,8 @@ export default function Home() {
           method: "POST",
           body: formData,
         });
+
+        console.log("page.tsx Response:", response);
 
         const result = await response.json();
 
@@ -122,18 +125,18 @@ export default function Home() {
     <div className="flex flex-col min-h-screen max-h-screen">
       <nav className="flex gap-0.5 justify-between items-center px-4 py-3 top-0 fixed left-0 right-0 bg-white/80 backdrop-blur-sm shadow-sm z-10">
         <div className="flex items-center gap-2 w-full max-w-2xl mx-auto">
-          <Logo className="w-6 h-6" />
+          <Image
+            src={`/logos/squadbase.svg`}
+            alt={"squadbase"}
+            width={14}
+            height={14}
+          />
           <h1 className="text-md font-medium">
-            Analyst by{" "}
-            <a
-              href="https://e2b.dev"
-              target="_blank"
-              className="underline decoration-[rgba(229,123,0,.3)] decoration-2 text-[#ff8800]"
-            >
-              E2B
-            </a>
+            GA4 Analyst
           </h1>
-          <RepoBanner />
+          {/* <RepoBanner /> */}
+          <div className="flex-grow" />
+          <p className="text-sm text-gray-500">This app analyzes data from google analytics below.</p>
         </div>
       </nav>
 
