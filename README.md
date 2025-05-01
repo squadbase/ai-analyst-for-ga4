@@ -1,7 +1,7 @@
 # AI Analyst for Google Analytics (Powered by E2B)
 
 This is an AI-powered data analysis tool that fetches and analyzes **Google Analytics data via BigQuery** using [E2B](https://e2b.dev).  
-This project is hosted on **[Squadbase](https://squadbase.com)** and serves as a **sample application** to demonstrate how AI agents can be deployed and used in a production-ready environment.
+This project is hosted on **[Squadbase](https://squadbase.dev)** and serves as a **sample application** to demonstrate how AI agents can be deployed and used in a production-ready environment.
 
 ![Preview](preview.png)
 
@@ -17,7 +17,7 @@ This project is hosted on **[Squadbase](https://squadbase.com)** and serves as a
 
 **Built using:**
 - 🔹 ✶ [E2B Sandbox](https://github.com/e2b-dev/code-interpreter)
-- 🔹 [Squadbase](https://squadbase.com)
+- 🔹 [Squadbase](https://squadbase.dev)
 - 🔹 Vercel AI SDK
 - 🔹 Next.js
 - 🔹 echarts library
@@ -34,13 +34,13 @@ Try the hosted version on Squadbase, or run it locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/e2b-dev/ai-analyst.git
+git clone https://github.com/squadbase/sampleapp_bigquery.git
 ```
 
 ### 2. Install dependencies
 
 ```bash
-cd fragments && npm i
+npm i
 ```
 
 ### 3. Set up your API keys
