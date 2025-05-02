@@ -19,7 +19,7 @@ Use them to build the BigQuery table path.
 Also create the service-account.json required for bigquery.
 Each value is stored in an environment variable. For example, the token_uri is a key name such as BIGQUERY_TOKEN_URI.
 The table name is events_*. Each asterisk is followed by a date (e.g., 20250421)..
-If you use google-cloud-bigquery, db-types (version 1.1.1) is required.
+If you use google-cloud-bigquery (version 3.19.0), db-types (version 1.1.1) is required.
 
 Install additional packages (using !pip syntax) before importing them.
 
