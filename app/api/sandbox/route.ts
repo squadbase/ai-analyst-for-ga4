@@ -44,6 +44,17 @@ export async function POST(req: Request) {
     }
   });
 
+  await sandbox.runCode('pip install --upgrade google-cloud-bigquery db-types==1.1.1', {
+    language: 'python',
+  })
+
+  // await sandbox.commands.run('pip install --upgrade google-cloud-bigquery db-types==1.1.1', {
+  //   timeoutMs: sandboxTimeout,
+  //   onStdout: (data) => {
+  //     console.log(data)
+  //   },
+  // })
+
   const { text, results, logs, error } = await sandbox.runCode(code);
 
   return new Response(

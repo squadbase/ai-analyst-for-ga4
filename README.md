@@ -5,7 +5,7 @@ This project is hosted on **[Squadbase](https://squadbase.dev)** and serves as a
 
 ![Preview](preview.png)
 
-→ Try it on Squadbase: _[Your deployed URL here]_
+→ Try it on Squadbase: [https://squadbase.dev]_
 
 ## 🧠 Key Features
 - 🔹 Analyze real-time or historical Google Analytics data using LLMs
@@ -34,7 +34,7 @@ Try the hosted version on Squadbase, or run it locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/squadbase/sampleapp_bigquery.git
+git clone https://github.com/squadbase/ai-analyst-for-ga4.git
 ```
 
 ### 2. Install dependencies
