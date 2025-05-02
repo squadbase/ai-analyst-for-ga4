@@ -5,7 +5,7 @@ This project is hosted on **[Squadbase](https://squadbase.dev)** and serves as a
 
 ![Preview](preview.png)
 
-→ Try it on Squadbase: [https://squadbase.dev]_
+→ Try it on [Squadbase](https://squadbase.dev)
 
 ## 🧠 Key Features
 - 🔹 Analyze real-time or historical Google Analytics data using LLMs
